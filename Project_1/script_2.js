@@ -15,7 +15,7 @@ var centerY = canvas2.height/2;
 // Create gradient
 var grd = ctx2.createRadialGradient(centerX,centerY,0,centerX, centerY, radius + 50);
 grd.addColorStop(0,"red");
-grd.addColorStop(1,"#f5ff00");
+grd.addColorStop(1,"yellow");
 
 function myCircle(){
         

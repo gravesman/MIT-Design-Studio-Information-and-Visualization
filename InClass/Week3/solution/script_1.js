@@ -25,7 +25,7 @@ var scaleXPlot1 = d3.scaleBand().domain(mapYears).rangeRound([0, width1]).paddin
 
 // 2 get the minimum and maximum values
 var maxFruit = d3.max(data,function(d){return d.fruit});
-// var minFruit = d3.min(data,function(d){return d.fruit});
+//var minFruit = d3.min(data,function(d){return d.fruit});
 var scaleYPlot1 = d3.scaleLinear().domain([0,maxFruit]).rangeRound([height1, 0]);
 
 //create groups to put the content inside them

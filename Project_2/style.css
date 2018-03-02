@@ -4,6 +4,7 @@ body {
 
 
 #mobile1,#mobile2 {
+    display: inline-block;
     width: 414px;
     height: 736px;
     border: 1px solid;
@@ -11,4 +12,28 @@ body {
     margin-left: auto;
     margin-right: auto;
     margin-bottom:40px;
+    margin-top: 40px;
+}
+
+.text {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom:40px;
+    font: Helvetica;
+    font-size: 18pt;
+}
+
+#sketches {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom:40px;
+}
+
+body {
+    color: white;
+    background-color: black;
+    
 }

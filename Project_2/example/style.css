@@ -57,14 +57,14 @@ h2{
 
 .weather {
     fill: none;
-    stroke: #f9bd09;
+    stroke: #a5318a;
     stroke-width: 4px;
     stroke-linecap: round;
     stroke-linejoin: round;
 }
 
 .weatherArea {
-    fill: rgba(249, 201, 145, 0.3);
+    fill: rgba(145, 161, 249, 0.3);
 }
 
 .weatherDots {

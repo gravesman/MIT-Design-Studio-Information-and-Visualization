@@ -56,3 +56,78 @@ body {
     text-align: center;
     font-size: 200px;
 }
+
+
+
+
+
+.weather {
+    fill: none;
+    stroke: #4ECAFF;
+    stroke-width: 4px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.weatherArea {
+    fill: rgba(246, 156, 51, 0.3);
+}
+
+.weatherDots {
+    stroke: #253172;
+    stroke-width: 2px;
+    fill: white;
+}
+
+.meanWeather {
+    stroke: #F69C33;
+    stroke-dasharray: 3px 1px;
+    stroke-width: 1px;
+}
+
+.weatherNumbers {
+    text-anchor: middle;
+    font-size:7.5pt;
+    fill: black;
+}
+
+.weekWeather .lines {
+    stroke: #d6d6d6;
+    stroke-width: 2px;
+}
+
+.weekWeather .maxDots {
+    stroke: #d44d05;
+    fill: white;
+    stroke-width: 2px;
+}
+
+.weekWeather .minDots {
+    stroke-width: 2px;
+    fill: white;
+    stroke: #0998f9;
+}
+
+.axis-y .tick line  {
+    stroke-width: 1px;
+    shape-rendering: crispEdges;
+    stroke: #e8eced;
+}
+
+
+.axis-x .tick line, .axis-x .tick path {
+    stroke-width: 1px;
+    stroke: black;
+    shape-rendering: crispEdges;
+}
+
+.axis-y path {
+    display: none;
+}
+
+.title {
+    text-align: center;
+    font-family: Helvetica Neue, Helvetica, sans-serif;
+    font-size: 20px;
+    padding-bottom: 0px;
+}

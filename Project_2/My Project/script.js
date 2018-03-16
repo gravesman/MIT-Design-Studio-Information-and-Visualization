@@ -127,7 +127,7 @@ function draw(data){
     ctx.font = "200 42px Helvetica Neue, Helvetica, Sans Serif";
     ctx.fillStyle = "#000";
     ctx.textAlign = "center";
-    ctx.fillText("Today",414/2,360/scale);
+    ctx.fillText("Today",414/2,365/scale);
 
     //Low for today
     ctx.font = "200 29px Helvetica Neue, Helvetica, Sans Serif";

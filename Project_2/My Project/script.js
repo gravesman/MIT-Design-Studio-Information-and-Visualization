@@ -177,7 +177,7 @@ function draw(data){
     var img1 = new Image();
     img1.src = "weatherIcons/" + currentIcon + ".png";
     img1.onload = function () {
-    ctx.drawImage(img1, 414/5-37.5, 285, 75, 75);
+    ctx.drawImage(img1, 414/5-37.5, 275, 75, 75);
     }
 
 
@@ -197,7 +197,7 @@ function draw(data){
     var img2 = new Image();
     img2.src = "weatherIcons/" + inFourHoursIcon + ".png";
     img2.onload = function () {
-    ctx.drawImage(img2, 414/5-37.5, 285+(320/scale), 75, 75);
+    ctx.drawImage(img2, 414/5-37.5, 275+(320/scale), 75, 75);
     }
 
 
@@ -217,7 +217,7 @@ function draw(data){
     var img3 = new Image();
     img3.src = "weatherIcons/" + inEightHoursIcon + ".png";
     img3.onload = function () {
-    ctx.drawImage(img3, 414/5-37.5, 285 + (640/scale), 75, 75);
+    ctx.drawImage(img3, 414/5-37.5, 275 + (640/scale), 75, 75);
     }
 
 
@@ -237,7 +237,7 @@ function draw(data){
     var img4 = new Image();
     img4.src = "weatherIcons/" + inTwelveHoursIcon + ".png";
     img4.onload = function () {
-    ctx.drawImage(img4, 414/5-37.5, 285 + (960/scale), 75, 75);
+    ctx.drawImage(img4, 414/5-37.5, 275 + (960/scale), 75, 75);
     }
     
     
@@ -267,7 +267,7 @@ function draw(data){
     var img5 = new Image();
     img5.src = "weather-icons-colored/" + todayIcon + ".png";
     img5.onload = function () {
-    ctx2.drawImage(img5, 57, 100, 300, 300);
+    ctx2.drawImage(img5, 107, 170, 200, 200);
     
     //Low for today
     ctx2.font = "200 29px Helvetica Neue, Helvetica, Sans Serif";
@@ -275,7 +275,7 @@ function draw(data){
     ctx2.textAlign = "center";
     var array1 = ["Low", todayLow + "°"];
     var x2 = 414/5;
-    var y1 = 400/scale;
+    var y1 = 480/scale;
     for (var i = 0; i < array1.length; i++) {
        ctx2.fillText(array1[i], x2, y1);
        y1 += 29;
@@ -287,11 +287,16 @@ function draw(data){
     ctx2.textAlign = "center";
     var array2 = ["High", todayHigh + "°"];
     var x3 = 414/5*4;
-    y1 = 400/scale;
+    y1 = 480/scale;
     for (var i = 0; i < array2.length; i++) {
        ctx2.fillText(array2[i], x3, y1);
        y1 += 29;
     }
+        
+    //black dividing line
+    ctx2.stroke();
+    ctx2.fillStyle = "#000";
+    ctx2.fillRect(0, 734/2, 413, 4);
         
 //        //Current Temp
 //        ctx2.font = "200 100px Helvetica Neue, Helvetica, Sans Serif";

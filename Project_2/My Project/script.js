@@ -127,7 +127,7 @@ function draw(data){
     ctx.font = "200 42px Helvetica Neue, Helvetica, Sans Serif";
     ctx.fillStyle = "#000";
     ctx.textAlign = "center";
-    ctx.fillText("Today",414/2,350/scale);
+    ctx.fillText("Today",414/2,360/scale);
 
     //Low for today
     ctx.font = "200 29px Helvetica Neue, Helvetica, Sans Serif";
@@ -157,7 +157,7 @@ function draw(data){
     var img = new Image();
     img.src = "weatherIcons/" + todayIcon + ".png";
     img.onload = function () {
-    ctx.drawImage(img, 145, 120, 125, 125);
+    ctx.drawImage(img, 145, 130, 125, 125);
     }
 
 
